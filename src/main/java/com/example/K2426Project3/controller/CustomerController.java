@@ -39,6 +39,7 @@ public class CustomerController {
         model.addAttribute("listZone" ,zones);
         System.out.println(123);
         System.out.println(4444);
+        System.out.println(55555);
         return "customer/save";
     }
     @PostMapping("/save")
