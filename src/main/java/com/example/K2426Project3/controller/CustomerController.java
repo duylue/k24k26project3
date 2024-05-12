@@ -37,6 +37,7 @@ public class CustomerController {
         Customer customer = customerService.findById(cid);
         model.addAttribute("customer",customer);
         model.addAttribute("listZone" ,zones);
+        System.out.println(123);
         return "customer/save";
     }
     @PostMapping("/save")
