@@ -20,7 +20,8 @@ public class ProductController {
     private ProductService productService;
 
     @GetMapping
-    public String get(Model model) {
+    public String get(Model model,@SessionAttribute String name) {
+        System.out.println(name);
         List<Product> list = productService.list();
         model.addAttribute("list", list);
         return "product/list";
